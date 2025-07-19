@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/beatsaber-levels', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://atlas-sql-687af49c3cba7712fbf8add1-8ytrwg.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
