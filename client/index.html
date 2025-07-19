@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Saber 3D Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.module.min.js",
+                "tween": "https://cdnjs.cloudflare.com/ajax/libs/tween.js/21.0.0/tween.esm.min.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="game-container"></div>
+    <div id="overlay">
+        <div id="controller-status">Press Start to play!</div>
+        <button id="start-button">Start Game</button>
+        <div id="level-selection" style="display: none;">
+            <h2>Select Level</h2>
+            <div id="level-list"></div>
+            <button id="back-button">Back</button>
+            <button id="editor-button">Level Editor</button>
+        </div>
+    </div>
+    <div id="game-info" style="display: none;">
+        <div id="score">Score: 0</div>
+        <div id="combo">Combo: 0</div>
+        <div id="song-info">Now Playing: </div>
+    </div>
+    <div id="feedback-message"></div>
+    <audio id="background-music"></audio>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
